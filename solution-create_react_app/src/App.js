@@ -4,8 +4,18 @@ import { Component } from 'react';
 import {FormRadio, FormCheckbox, InputLabel, OwnerRepoName} from './components/FormGroup';
 import Button from './components/Button';
 
+import { data } from './data';
+
 class App extends Component {
     render() {
+        const repoTypes = data.pages.createNewRepository.repoTypes.map((props, index) =>
+            <FormRadio key={props.id} {...props}/>
+        );
+
+        const repoOptions = data.pages.createNewRepository.repoOptions.map((props, index) =>
+            <FormCheckbox key={props.id} className={index > 0 ? "mt-0 mb-3" : ""} {...props}/>
+        );
+
         return (
             <main>
                 <div className="container">
@@ -25,43 +35,12 @@ class App extends Component {
                                 required={false}
                             />
                             <hr></hr>
-                            <FormRadio
-                                id="public-description"
-                                label="Public"
-                                value="public"
-                                name="repository[visibility]"
-                                description="Anyone on the internet can see this repository. You choose who can commit."
-                                octicon="repo"
-                                defaultChecked={true}
-                            />
-                            <FormRadio
-                                id="private-description"
-                                label="Private"
-                                value="private"
-                                name="repository[visibility]"
-                                description="You choose who can see and commit to this repository."
-                                octicon="lock"
-                            />
+                            {repoTypes}
                             <div>
                                 <hr></hr>
                                 <h3 className="h5">Initialize this repository with:</h3>
                                 <p className="text-gray">Skip this step if you’re importing an existing repository.</p>
-                                <FormCheckbox
-                                    id="repository_auto_init"
-                                    label="Add a README file"
-                                    name="repository[auto_init]"
-                                    description="This is where you can write a long description for your project. Learn more."
-                                />
-                                <FormCheckbox
-                                    id="repository_gitignore_template_toggle"
-                                    label="Add .gitignore"
-                                    description="Choose which files not to track from a list of templates. Learn more."
-                                />
-                                <FormCheckbox
-                                    id="repository_license_template_toggle"
-                                    label="Choose a license"
-                                    description="A license tells others what they can and can't do with your code. Learn more."
-                                />
+                                {repoOptions}
                             </div>
                             <hr></hr>
                             <Button type="submit" buttonType="primary">Create Repository</Button>

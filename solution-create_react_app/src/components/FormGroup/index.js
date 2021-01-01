@@ -4,7 +4,7 @@ import React, { Component } from  'react';
 class FormCheckbox extends Component {
     render() {
         return (
-            <div className="form-checkbox">
+            <div className={`form-checkbox ${this.props.className}`}>
                 <label>
                     <input
                         id={this.props.id}
