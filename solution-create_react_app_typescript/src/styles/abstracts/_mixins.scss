@@ -1,0 +1,100 @@
+// Padding
+@mixin pt-x-list($n) {
+    @for $i from 0 through $n {
+        .pt-#{$i} {
+            @if $i==0 {
+                padding-top: 0 !important;
+            }
+
+            @else if $i==1 {
+                padding-top: 4px !important;
+            }
+
+            @else {
+                $value: ($i - 1) * 8px;
+                padding-top: $value !important;
+            }
+        }
+    }
+}
+
+
+// Margin
+@mixin mt-x-list($n) {
+    @for $i from 0 through $n {
+        .mt-#{$i} {
+            @if $i==0 {
+                margin-top: 0 !important;
+            }
+
+            @else {
+                $value: pow(2, $i+1) * 1px;
+                margin-top: $value !important;
+            }
+        }
+    }
+}
+
+@mixin mr-x-list($n) {
+    @for $i from 0 through $n {
+        .mr-#{$i} {
+            @if $i==0 {
+                margin-right: 0 !important;
+            }
+
+            @else {
+                $value: pow(2, $i+1) * 1px;
+                margin-right: $value !important;
+            }
+        }
+    }
+}
+
+@mixin mb-x-list($n) {
+    @for $i from 0 through $n {
+        .mb-#{$i} {
+            @if $i==0 {
+                margin-bottom: 0 !important;
+            }
+
+            @else {
+                $value: pow(2, $i+1) * 1px;
+                margin-bottom: $value !important;
+            }
+        }
+    }
+}
+
+@mixin mx-x-list($n) {
+    @for $i from 0 through $n {
+        .mx-#{$i} {
+            @if $i==0 {
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+            }
+
+            @else {
+                $value: pow(2, $i+1) * 1px;
+                margin-left: $value !important;
+                margin-right: $value !important;
+            }
+        }
+    }
+}
+
+@mixin my-x-list($n) {
+    @for $i from 0 through $n {
+        .my-#{$i} {
+            @if $i==0 {
+                margin-top: 0 !important;
+                margin-bottom: 0 !important;
+            }
+
+            @else {
+                $value: pow(2, $i+1) * 1px;
+                margin-top: $value !important;
+                margin-bottom: $value !important;
+            }
+        }
+    }
+}

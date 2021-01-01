@@ -1,0 +1,27 @@
+/*
+    Style Reference:
+        - The 7-1 Pattern: https://sass-guidelin.es/
+        - inheritance: https://css-tricks.com/sass-style-guide/
+*/
+
+
+@import './styles/abstracts/variables',
+        './styles/abstracts/functions',
+        './styles/abstracts/mixins';
+
+@import './styles/base/base';
+@import './styles/base/colors';
+@import './styles/base/reset';
+@import './styles/base/typography';
+
+@import './styles/layout/body';
+@import './styles/layout/margins';
+@import './styles/layout/paddings';
+@import './styles/layout/visibility';
+@import './styles/layout/forms';
+
+@import './styles/components/avatar';
+@import './styles/components/buttons';
+@import './styles/components/owner_repo_suggestion';
+@import './styles/components/subhead';
+@import './styles/components/octicons';
