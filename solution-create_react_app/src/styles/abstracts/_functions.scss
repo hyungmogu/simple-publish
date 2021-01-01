@@ -1,9 +1,9 @@
 @function pow($base, $exponent) {
-  $result: 1;
+    $result: 1;
 
-  @for $_ from 1 through $exponent {
-    $result: $result * $base;
-  }
+    @for $_ from 1 through $exponent {
+        $result: $result * $base;
+    }
 
-  @return $result;
+    @return $result;
 }

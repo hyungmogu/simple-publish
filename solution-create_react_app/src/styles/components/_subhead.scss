@@ -1,17 +1,17 @@
 .subhead {
-  border-bottom: 1px solid var(--color-border-secondary);
+    border-bottom: 1px solid var(--color-border-secondary);
 }
 
 .subhead-heading {
-  font-size: 24px;
-  font-weight: 400;
-  margin-bottom: 8px;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 8px;
 }
 
 .subhead-description {
-  margin-top: -8px;
-  margin-bottom: 16px;
-  font-size: 14px;
-  color: var(--color-text-secondary);
-  flex: 1 100%;
+    margin-top: -8px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    color: var(--color-text-secondary);
+    flex: 1 100%;
 }

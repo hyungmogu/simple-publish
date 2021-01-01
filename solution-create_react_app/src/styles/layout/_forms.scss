@@ -1,81 +1,81 @@
 .form-checkbox {
-  padding-left: 20px;
-  margin: 15px 0;
-  vertical-align: middle;
-
-  input[type=radio] {
-    float: left;
-    margin: 5px 0 0 -20px;
+    padding-left: 20px;
+    margin: 15px 0;
     vertical-align: middle;
-  }
 
-  input[type=checkbox] {
-    float: left;
-    margin: 5px 0 0 -20px;
-    vertical-align: middle;
-  }
+    input[type=radio] {
+        float: left;
+        margin: 5px 0 0 -20px;
+        vertical-align: middle;
+    }
 
-  .note {
-    display: block;
-    margin: 0;
-    font-size: 12px;
-    font-weight: 400;
-    color: var(--color-text-secondary);
-  }
+    input[type=checkbox] {
+        float: left;
+        margin: 5px 0 0 -20px;
+        vertical-align: middle;
+    }
+
+    .note {
+        display: block;
+        margin: 0;
+        font-size: 12px;
+        font-weight: 400;
+        color: var(--color-text-secondary);
+    }
 }
 
 .form-control {
-  padding: 5px 12px;
-  font-size: 14px;
-  line-height: 20px;
-  color: var(--color-text-primary);
-  vertical-align: middle;
-  border: 1px solid var(--color-input-border);
-  border-radius: 6px;
-  outline: none;
-  box-shadow: var(--color-shadow-inset);
+    padding: 5px 12px;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--color-text-primary);
+    vertical-align: middle;
+    border: 1px solid var(--color-input-border);
+    border-radius: 6px;
+    outline: none;
+    box-shadow: var(--color-shadow-inset);
 }
 
 .form-group {
-  margin: 15px 0;
+    margin: 15px 0;
 
-  &.required {
-    .header-label::after {
-      padding-left: 5px;
-      color: var(--color-text-danger);
-      content: "*";
-    }
-  }
-
-  dt {
-    margin: 0 0 6px;
-  }
-
-  .form-control {
-    width: 440px;
-    max-width: 100%;
-    margin-right: 5px;
-    background-color: #fafbfc;
-
-    &:focus {
-      background-color: var(--color-input-bg);
-      border-color: var(--color-state-focus-border);
-      box-shadow: var(--color-state-focus-shadow);
+    &.required {
+        .header-label::after {
+            padding-left: 5px;
+            color: var(--color-text-danger);
+            content: "*";
+        }
     }
 
-    &.long {
-      width: 100%;
+    dt {
+        margin: 0 0 6px;
     }
 
-    &.short {
-      width: 250px;
+    .form-control {
+        width: 440px;
+        max-width: 100%;
+        margin-right: 5px;
+        background-color: #fafbfc;
+
+        &:focus {
+            background-color: var(--color-input-bg);
+            border-color: var(--color-state-focus-border);
+            box-shadow: var(--color-state-focus-shadow);
+        }
+
+        &.long {
+            width: 100%;
+        }
+
+        &.short {
+            width: 250px;
+        }
     }
-  }
 }
 
 .note {
-  min-height: 17px;
-  margin: 4px 0 2px;
-  font-size: 12px;
-  color: var(--color-text-secondary);
+    min-height: 17px;
+    margin: 4px 0 2px;
+    font-size: 12px;
+    color: var(--color-text-secondary);
 }

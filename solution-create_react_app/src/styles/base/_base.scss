@@ -1,17 +1,17 @@
 .clearfix:after,
 .clearfix:before {
-  display: table;
-  content: "";
+    display: table;
+    content: "";
 }
 
 .clearfix::after {
-  clear: both;
+    clear: both;
 }
 
 .float-left {
-  float: left;
+    float: left;
 }
 
 .position-absolute {
-  position: absolute !important;
+    position: absolute !important;
 }
