@@ -58,8 +58,8 @@ class App extends Component {
                                     Initialize this repository with:
                                 </h3>
                                 <p className="text-gray">
-                                    Skip this step if you’re importing an existing
-                                    repository.
+                                    Skip this step if you’re importing an
+                                    existing repository.
                                 </p>
                                 {repoOptions}
                             </div>
