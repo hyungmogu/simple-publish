@@ -1,6 +1,10 @@
 export const data = {
     "pages": {
         "createNewRepository": {
+            "subheader": {
+                "label": "Create a new repository",
+                "description": "A repository contains all project files, including the revision history. Already have a project repository elsewhere? Import a repository."
+            },
             "repoTypes": [
                 {
                     "id": "public-description",

@@ -1,8 +1,10 @@
 import './App.scss';
 
 import { Component } from 'react';
-import {FormRadio, FormCheckbox, InputLabel, OwnerRepoName} from './components/FormGroup';
+
+import { FormRadio, FormCheckbox, InputLabel, OwnerRepoName } from './components/FormGroup';
 import Button from './components/Button';
+import Subhead from './components/Subhead';
 
 import { data } from './data';
 
@@ -20,12 +22,9 @@ class App extends Component {
             <main>
                 <div className="container">
                     <form>
-                        <div className="subhead mb-4">
-                            <h1 className="subhead-heading">Create a new Repository</h1>
-                            <div className="subhead-description">
-                                A repository contains all project files, including the revision history. Already have a project repository elsewhere? <a href="#">Import a repository</a>.
-                            </div>
-                        </div>
+                        <Subhead
+                            {...data.pages.createNewRepository.subheader}
+                        />
                         <OwnerRepoName/>
                         <div>
                             <InputLabel
