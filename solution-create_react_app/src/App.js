@@ -20,7 +20,7 @@ class App extends Component {
             <main>
                 <div className="container">
                     <form>
-                        <div className="subhead mb-5">
+                        <div className="subhead mb-4">
                             <h1 className="subhead-heading">Create a new Repository</h1>
                             <div className="subhead-description">
                                 A repository contains all project files, including the revision history. Already have a project repository elsewhere? <a href="#">Import a repository</a>.

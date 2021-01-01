@@ -86,7 +86,7 @@ class OwnerRepoName extends Component {
                 <div className="owner-reponame clearfix">
                     <dl className="form-group required mt-1 mb-0 float-left">
                         <dt className="form-group-header">
-                            <label>Owner</label>
+                            <label className="header-label">Owner</label>
                         </dt>
                         <dd className="form-group-body">
                             <details className="select-menu">
@@ -111,8 +111,8 @@ class OwnerRepoName extends Component {
                     <span className="float-left f2 pt-4 mt-1 mx-2">/</span>
                     <div className="d-sm-none mb-2 clearfix"></div>
                     <dl className="form-group required mt-1 mb-0 float-left">
-                        <dt className="input-label">
-                            <label for="repository_name">Repository name</label>
+                        <dt>
+                            <label className="header-label" for="repository_name">Repository name</label>
                         </dt>
                         <dd className="form-group-body">
                             <input maxlength="100" className="form-control short" required="" size="100" type="text" name="repository[name]" id="repository_name" autocomplete="off" spellcheck="false" aria-describedby="input-check-4221 repo-name-suggestion"/>
